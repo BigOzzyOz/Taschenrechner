@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <script src="script.js"></script>
+</head>
+<body>
+<div id="result">
+    
+</div>
+
+
+<table>
+    <tr>
+        <td onclick="deleteScreen()">C</td>
+        <td onclick="appendOperations('&#40')">(</td>
+        <td onclick="appendOperations('&#41')">)</td>
+        <td id="del_sign" onclick="deleteLast()">DEL</td>
+    </tr>
+    <tr>
+        <td onclick="appendOperations(7)">7</td>
+        <td onclick="appendOperations(8)">8</td>
+        <td onclick="appendOperations(9)">9</td>
+        <td class="ari_sym" onclick="appendOperations(' / ')">/</td>
+    </tr>
+    <tr>
+        <td onclick="appendOperations(4)">4</td>
+        <td onclick="appendOperations(5)">5</td>
+        <td onclick="appendOperations(6)">6</td>
+        <td class="ari_sym" onclick="appendOperations(' * ')">*</td>
+    </tr>
+    <tr>
+        <td onclick="appendOperations(1)">1</td>
+        <td onclick="appendOperations(2)">2</td>
+        <td onclick="appendOperations(3)">3</td>
+        <td class="ari_sym"  onclick="appendOperations(' - ')">-</td>
+    </tr>
+    <tr>
+        <td onclick="appendOperations(0)">0</td>
+        <td onclick="appendOperations('.')">,</td>
+        <td id="result_sign" onclick="calc()">=</td>
+        <td class="ari_sym"  onclick="appendOperations(' + ')">+</td>
+    </tr>
+</table>
+</body>
+</html>

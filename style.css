@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+}
+table {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(134, 134, 134);
+    color: rgb(167, 164, 182);
+    text-align: center;
+    font-size: 24px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+}
+td {
+    width: 25%;
+    background-color: #363636;
+}
+td:hover {
+    background-color: rgb(134, 134, 134);
+    cursor: pointer;
+}
+#result {
+    height: 30vh;
+    background-color: rgb(60, 60, 60);
+    color: azure;
+    display: flex;
+    justify-content: flex-end;          
+    align-items: flex-end;
+    font-size: 10vh;
+    padding: 24px;
+    box-sizing: border-box;
+}
+#result_sign {
+    background-color: rgb(20, 10, 100);
+}
+#result_sign:hover {
+    background-color: rgb(20, 10, 130);
+}
+#del_sign {
+    background-color: rgb(170, 10, 10);
+}
+#del_sign:hover {
+    background-color: rgb(200, 10, 10);
+}
+.ari_sym {
+    background-color: rgb(60, 100, 140);
+}
+.ari_sym:hover {
+    background-color: rgb(90, 110, 140);
+}
